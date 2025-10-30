@@ -1,0 +1,110 @@
+body{
+    background: #000000;
+}
+header{
+    margin-bottom: 6rem;
+    cursor: default;
+    user-select: none; 
+}
+.container{
+    margin-right: 2rem;
+    margin-left: 20%;
+}
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    height: 95%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #131313;
+    padding-top: 60px;
+    -webkit-box-shadow:0px 0px 98px 29px rgba(197,156,109,0.16);
+    -moz-box-shadow: 0px 0px 98px 29px rgba(197,156,109,0.16);
+    box-shadow: 0px 0px 98px 29px rgba(197,156,109,0.16);
+}
+.nav-bottom{
+    display: flex;
+    flex-direction: column;
+    background: #846949;
+    background: linear-gradient(0deg, #846949 0%, rgba(197, 156, 109, 1) 100%);
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bottom a{
+    display: inline !important;
+    text-align: center;
+    padding: 0  !important;
+    margin: 0 !important;
+}
+.nav-bottom i{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+}
+.nav-bottom a:hover{
+    color:black !important;
+}
+nav img{
+    width: 80%;
+    margin: 20px;
+}
+
+.sidenav a {
+    font-family: 'Gill Sans MT', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    font-size: 2.6rem;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+.sidenav a:hover{
+    color:#c59c6d;
+}
+.active{
+    color:#c59c6d   !important;
+}
+
+h1{
+    color: white; 
+    text-align: right;
+    font-family:'Gill Sans MT';
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.moto{
+    text-align: right;
+    font-family: 'Gill Sans MT';
+    font-size: 2rem;
+    color: #c59c6d;
+    margin: 0;
+    text-shadow: rgba(197,156,109,1) 0px 0px 19px;
+}
+.moto:hover{
+    text-shadow: #ffc98c 0px 0px 19px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+}
+.gallery-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gallery img{
+    max-height: 500px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
